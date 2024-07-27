@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #FFD700; /* Um tom de amarelo-dourado para destacar o nome da receita */
+}
+
+.detalhes p {
+    font-size: 16px;
+    line-height: 1.6;
+    border-bottom: 1px solid #444; /* Adiciona uma linha sutil entre os detalhes */
+    padding-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #0066cc;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #005cbf;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ receita['nome_receita'].capitalize() }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/detalhes.css') }}">
+</head>
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <h1>{{ receita['nome_receita'].capitalize() }}</h1>
+        <div class="detalhes">
+            <p><strong>Tipo:</strong> {{ receita['tipo'].capitalize() }}</p>
+            <p><strong>Categoria:</strong> {{ receita['categoria'].replace('_', ' ').capitalize() }}</p>
+            <p><strong>Tipo de Prato:</strong> {{ receita['tipo_prato'].replace('_', ' ').capitalize() }}</p>
+            <p><strong>País de Origem:</strong> {{ receita['pais_origem'].capitalize() }}</p>
+            <p><strong>Tempo de Preparo:</strong> {{ receita['tempo_preparo'] }} minutos</p>
+            <p><strong>Modo de Preparo:</strong> {{ receita['modo_preparo'] }}</p>
+        </div>
+        <a href="{{ url_for('consultar_receitas') }}" class="btn btn-primary mt-3">Voltar para a busca</a>
+    </div>
+</body>
+</html>
