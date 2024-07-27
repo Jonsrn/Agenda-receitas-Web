@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciador de Receitas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="menu">
+        <img src="{{ url_for('static', filename='icones/escrevendo_receita.jpg') }}" alt="Inserir Receita">
+        <a href="{{ url_for('inserir_receitas') }}">Inserir Receita</a>
+        <img src="{{ url_for('static', filename='icones/consultar.jpg') }}" alt="Consultar Receitas">
+        <a href="{{ url_for('consultar_receitas') }}">Consultar Receitas</a>
+    </div>
+</body>
+</html>

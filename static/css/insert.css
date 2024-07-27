@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #343a40; /* Cor de fundo escura */
+    color: #f8f9fa; /* Cor de texto clara */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #495057; /* Cor de fundo do card */
+    color: #ffffff; /* Cor de texto dentro do card */
+    width: 100%;
+    max-width: 500px;
+    border: none;
+}
+
+.form-label {
+    color: #dee2e6; /* Cor do label mais clara */
+}
+
+.form-select {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
