@@ -1,8 +1,9 @@
 from pymongo import MongoClient
+import os
 
 def obter_db():
-    # Substitua 'your_connection_string' pela sua string de conexão ao MongoDB
-    cliente = MongoClient('mongodb://localhost:27017/')
+    mongo_uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/mydatabase")
+    cliente = MongoClient(mongo_uri)
     db = cliente['banco_de_dados_receitas']  # Nome do banco de dados
     return db
 
